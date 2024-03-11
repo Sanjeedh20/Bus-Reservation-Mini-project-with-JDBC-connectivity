@@ -16,7 +16,7 @@ public class JdbcDemo {
     public static void readrecorde() throws SQLException {
     	String url="jdbc:mysql://localhost:3306/demo";
         String user="root";
-        String pass="pubg@123";
+        String pass="12345";
         String query="select*from student";
         Connection con=DriverManager.getConnection(url, user, pass);
         Statement st=con.createStatement();
@@ -33,7 +33,7 @@ public class JdbcDemo {
     public static void insertrecords() throws SQLException{
     	String url="jdbc:mysql://localhost:3306/demo";
         String user="root";
-        String pass="pubg@123";
+        String pass="12345";
         String query="insert into student(ename,Gpa) values('peaky',7.99)";
         Connection con=DriverManager.getConnection(url, user, pass);
         Statement st=con.createStatement();
@@ -45,7 +45,7 @@ public class JdbcDemo {
     	//Scanner in=new Scanner(System.in);
     	String url="jdbc:mysql://localhost:3306/demo";
     	String user="root";
-    	String pass="pubg@123";
+    	String pass="12345";
     	int id=in.nextInt();
     	String name=in.next();
     	float gpa=in.nextFloat();
@@ -63,7 +63,7 @@ public class JdbcDemo {
     public static void delete(Scanner in) throws SQLException{
     	String url="jdbc:mysql://localhost:3306/demo";
     	String name="root";
-    	String pass="pubg@123";
+    	String pass="12345";
     	int id=in.nextInt();
     	
     	Connection con=DriverManager.getConnection(url,name,pass);
@@ -79,7 +79,7 @@ public class JdbcDemo {
     public static void update(Scanner in) throws SQLException{
     	String url="jdbc:mysql://localhost:3306/demo";
     	String name="root";
-    	String pass="pubg@123";
+    	String pass="12345";
     	int id=in.nextInt();
     	
     	Connection con=DriverManager.getConnection(url,name,pass);
@@ -95,7 +95,7 @@ public class JdbcDemo {
     public static void call() throws SQLException{
     	String url="jdbc:mysql://localhost:3306/demo";
     	String name="root";
-    	String pass="pubg@123";
+    	String pass="12345";
     	int i=3;
     	
     	Connection con=DriverManager.getConnection(url,name,pass);
